@@ -1,8 +1,91 @@
+/******************************************
+[Table of contents]
+
+1. Body
+	2. Header / #header
+	3. Content / #content
+		3.1. Primary Banner / #primary-banner
+		3.2. Right column / #rightcolumn
+		3.3. Sidebar / #sidebar
+			3.3.1. RSS / #rss
+			3.3.2. Search / #search
+			3.3.3. Boxes / .box
+			3.3.4. Sideblog / #sideblog
+			3.3.5. Advertisements / .ads
+	4. Footer / #footer
+    5. EMBEDDED FONT
+        5.1 free_sans
+******************************************/
+
+
+/******************************************
+HEADER STYLING
+******************************************/
+
 #header {
     background-color: #0069d5;
     color: white;
 }
 
+#phone-number {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.3em;
+    font-weight: 700;
+}
+
 .vertical-center {
-    padding-top: .95rem;
+    padding-top: 1rem;
+}
+
+
+/******************************************
+PRIMARY BANNER STYLING
+******************************************/
+
+#primary-banner {
+    background-image: url("assets/img/samanage-header-background.jpg");
+    /* Image is centered vertically and horizontally at all times */
+    background-position: center center;
+    /* Image doesn't repeat */
+    background-repeat: no-repeat;
+    /* Makes the image fixed in the viewport so that it doesn't move when 
+     the content height is greater than the image height */
+    background-attachment: fixed;
+    /* This is what makes the background image rescale based on its container's size */
+    background-size: cover;
+    /* Pick a solid background color that will be displayed while the background image is loading */
+    background-color: #464646;
+}
+
+#primary-banner-text {
+    background-color: rgba(0,0,0,0.3);
+    color: #fff;
+}
+
+#trial-button {
+    background-color: #00943F;
+    color: #fff;
+}
+
+#demo-button {
+    background-color: #FFCB3E;
+    color: #0069d5;
+}
+
+.primary-banner-button {
+    font-family: 'free_sans', sans-serif;
+    font-weight: 900;
+}
+
+
+/******************************************
+EMBEDDED FONT
+******************************************/
+
+
+/*This font is used for the buttons in the primary-banner*/
+
+@font-face {
+    font-family: free_sans;
+    src: url("assets/font/FreeSans.ttf");
 }
