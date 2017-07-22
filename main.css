@@ -87,6 +87,20 @@ PRIMARY BANNER STYLING
     font-weight: 900;
 }
 
+/******************************************
+QUOTE WRAPPER STYLING
+******************************************/
+
+#quote-wrapper {
+    background-image: url("assets/img/samanage-accordian-form-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #464646;
+    /* Remove left and right margin from the primary banner*/
+    margin: 0 -15px;
+    min-height: 20em;
+    position: relative;
+}
 
 /******************************************
 EMBEDDED FONT
