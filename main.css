@@ -24,10 +24,22 @@ GENERAL STYLING
 
 ul {
     list-style: none;
+    margin-right: 4em;
+    padding: 0;
 }
 
 .horizontal-center {
     margin: 0 auto;
+}
+
+.custom-button {
+    /*    Remove the radius from stock Boostrap button to match Samanage styling*/
+    border-radius: 0;
+    font-family: 'free_sans', sans-serif;
+    font-size: 1.3em;
+    font-weight: 900;
+    height: 40px;
+    width: 260px;
 }
 
 
@@ -76,6 +88,7 @@ PRIMARY BANNER STYLING
     /* Pick a solid background color that will be displayed while the background image is loading */
     background-color: #464646;
     /* Remove left and right margin from the primary banner*/
+    font-family: 'free_sans', sans-serif;
     margin: 0 -15px;
     height: 58em;
     position: relative;
@@ -87,7 +100,8 @@ PRIMARY BANNER STYLING
 #primary-banner-text {
     background-color: rgba(0, 0, 0, 0.5);
     color: #fff;
-    padding: 40px 0;
+    margin-top: -20px;
+    padding: 43px 0;
     text-align: center;
     width: 100%;
 }
@@ -101,19 +115,25 @@ PRIMARY BANNER STYLING
     line-height: 1.3em;
 }
 
+#button-container {
+    margin: -290px auto 0 auto;
+    width: 100%;
+}
+
 #trial-button {
     background-color: #00943F;
     color: #fff;
-    width: 50%;
+    margin-left: 37%;
+    margin-right: .5%;
 }
 
 #demo-button {
     background-color: #FFCB3E;
     color: #0069d5;
-    width: 50%;
+    margin-left: .5%;
 }
 
-#customer-logos {
+#customer-logos-container {
     background-color: #EEEFF3;
     bottom: 0;
     padding: 30px 0;
@@ -121,26 +141,53 @@ PRIMARY BANNER STYLING
     width: 100%;
 }
 
-.primary-banner-button {
-    font-family: 'free_sans', sans-serif;
-    font-weight: 900;
+#customer-logos {
+    width: 65%;
 }
 
 
 /******************************************
-QUOTE WRAPPER STYLING
+FEATURE WRAPPER STYLING
 ******************************************/
 
-#quote-wrapper {
-    background-image: url("assets/img/samanage-accordian-form-bg.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: #464646;
-    /* Remove left and right margin from the primary banner*/
-    margin: 0 -15px;
-    min-height: 20em;
-    position: relative;
+#feature-wrapper {
+    display: flex;
+    margin: 100px 10% 0;
 }
+
+#ipad-image {}
+
+#feature-wrapper div ul li {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#feature-wrapper div ul li p {
+    /*    Ensure that the order of the text always comes after the image */
+    order: 2;
+    margin: 0;
+    /*    Vertically centers the text in its li */
+    align-self: center;
+}
+
+#feature-list-wrapper {
+    display: flex;
+}
+
+.feature-img {
+    position: relative;
+    overflow: hidden;
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    margin: 0.5em 1.2em 0.5em 0;
+}
+
+.feature-icon {
+    position: absolute;
+    width: auto;
+}
+
 
 
 /******************************************
@@ -170,6 +217,21 @@ SOCIAL WRAPPER STYLING
 
 
 /******************************************
+FOOTER STYLING
+******************************************/
+
+#footer {
+    background-color: #EDEEF2;
+    text-align: center;
+}
+
+#footer a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+/******************************************
 EMBEDDED FONT
 ******************************************/
 
@@ -188,28 +250,4 @@ EMBEDDED FONT
     height: 54px;
     display: inline-block;
     margin: 0.5em;
-}
-
-.feature-img {
-    position: relative;
-    overflow: hidden;
-    width: 25px;
-    height: 25px;
-    display: inline-block;
-    margin: 0.5em;
-}
-
-.feature-icon {
-    position: absolute;
-    width: auto;
-}
-
-#footer {
-    background-color: #EDEEF2;
-    text-align: center;
-}
-
-#footer a {
-    color: inherit;
-    text-decoration: none;
 }
