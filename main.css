@@ -233,33 +233,23 @@ QUOTE WRAPPER STYLING
 SOCIAL WRAPPER STYLING
 ******************************************/
 
+#social-wrapper {
+    align-items: center;
+    display: flex;
+}
+
+#social-wrapper ul {
+    margin: 3em auto;
+}
+
+#social-wrapper ul li {
+    display: inline;
+    margin: 0 .65em;
+}
+
 .social-share-icon {
     position: absolute;
     width: auto;
-}
-
-
-/******************************************
-FOOTER STYLING
-******************************************/
-
-#footer {
-    background-color: #EDEEF2;
-    text-align: center;
-}
-
-#footer a {
-    color: inherit;
-    text-decoration: none;
-}
-
-
-/******************************************
-SOCIAL-WRAPPER STYLING
-******************************************/
-
-#social-wrapper {
-    display: flex;
 }
 
 .social-icon-link {
@@ -271,6 +261,26 @@ SOCIAL-WRAPPER STYLING
     margin: 0.5em;
 }
 
+
+/******************************************
+FOOTER STYLING
+******************************************/
+
+#footer {
+    margin: 0 -15px;
+    background-color: #EDEEF2;
+    text-align: center;
+}
+
+#footer a {
+    color: inherit;
+    text-decoration: none;
+}
+
+#footer p {
+    margin: 0;
+    padding: 2.5em 0;
+}
 
 /******************************************
 EMBEDDED FONT
