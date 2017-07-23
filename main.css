@@ -152,7 +152,11 @@ FEATURE WRAPPER STYLING
 
 #feature-wrapper {
     display: flex;
-    margin: 100px 10% 0;
+    margin: 100px 19% 0;
+}
+
+#feature-text-wrapper {
+    margin-left: 40px;
 }
 
 #ipad-image {}
@@ -189,20 +193,39 @@ FEATURE WRAPPER STYLING
 }
 
 
-
 /******************************************
 QUOTE WRAPPER STYLING
 ******************************************/
 
 #quote-wrapper {
+    align-items: center;
     background-image: url("assets/img/samanage-accordian-form-bg.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #464646;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
     /* Remove left and right margin from the primary banner*/
     margin: 0 -15px;
     min-height: 20em;
     position: relative;
+}
+
+#quote-wrapper h1 {
+    font-size: 3em;
+    margin-top: 30px;
+}
+
+#quote-wrapper p {
+    font-size: 1.5em;
+}
+
+#quote-button {
+    background-color: #FFCB3E;
+    color: #000;
+    height: 3em;
+    margin-top: 2.5em;
 }
 
 
@@ -232,15 +255,11 @@ FOOTER STYLING
 
 
 /******************************************
-EMBEDDED FONT
+SOCIAL-WRAPPER STYLING
 ******************************************/
 
-
-/*This font is used for the buttons in the primary-banner*/
-
-@font-face {
-    font-family: free_sans;
-    src: url("assets/font/FreeSans.ttf");
+#social-wrapper {
+    display: flex;
 }
 
 .social-icon-link {
@@ -250,4 +269,17 @@ EMBEDDED FONT
     height: 54px;
     display: inline-block;
     margin: 0.5em;
+}
+
+
+/******************************************
+EMBEDDED FONT
+******************************************/
+
+
+/*This font is used for the buttons in the primary-banner*/
+
+@font-face {
+    font-family: free_sans;
+    src: url("assets/font/FreeSans.ttf");
 }
