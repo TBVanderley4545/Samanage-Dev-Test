@@ -14,10 +14,11 @@
     9.1 min-width --> 1921px
     9.2 max-width --> 1596px
     9.3 max-width --> 1296px
-    9.4 max-width --> 1043px
-    9.5 max-width --> 980px
-    9.6 max-width --> 476px
-    9.7 max-width --> 276px
+    9.4 max-width --> 1100px
+    9.5 max-width --> 768px
+    9.6 max-width --> 653px
+    9.7 max-width --> 476px
+    9.8 max-width --> 276px
     
 ******************************************/
 
@@ -329,7 +330,7 @@ MEDIA QUERIES
         background-size: cover;
     }
     #button-container {
-        margin: -12% auto 0 auto;
+        margin: 0 auto 200px auto;
     }
 }
 
@@ -382,7 +383,7 @@ MEDIA QUERIES
     }
 }
 
-@media screen and (max-width: 1043px) {
+@media screen and (max-width: 1100px) {
     /*    Change text size of primary-banner text to avoid the text size from exhibiting strange behavior and overall unattractive display. Additionally, use this break point to shrink the size of the primary-banner so that it takes up less space because we're likely transitioning to tablets and mobile devices at this point.    */
     /******************************************
     PRIMARY BANNER STYLING
@@ -409,6 +410,14 @@ MEDIA QUERIES
 
 @media screen and (max-width: 768px) {
     /*    Change the header logo and phone number to stack on top of each other. Change text size of primary-banner text, feature headline text and quote text to avoid the text size from exhibiting strange behavior and overall unattractive display. Additionally, modify button size and shift all buttons to take a single line to allow for easier tapping on touch devices.*/
+    
+    /******************************************
+    GENERAL STYLING
+    ******************************************/
+    .custom-button {
+        font-size: .7em;
+    }
+    
     /******************************************
     HEADER STYLING
     ******************************************/
@@ -444,11 +453,11 @@ MEDIA QUERIES
         flex-direction: column;
     }
     #trial-button {
-        margin: 0 0 1.25% 0;
+        margin: 0 0 .5em 0;
         width: 95%;
     }
     #demo-button {
-        margin: 1.25% 0 0 0;
+        margin: .5em 0 0 0;
         width: 95%;
     }
     /******************************************
