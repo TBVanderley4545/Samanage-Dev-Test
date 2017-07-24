@@ -28,8 +28,8 @@ GENERAL STYLING
 ******************************************/
 
 body {
-    margin: 0;
     font-family: sans-serif;
+    margin: 0;
 }
 
 ul {
@@ -88,17 +88,17 @@ PRIMARY BANNER STYLING
 ******************************************/
 
 #primary-banner {
-    background-image: url("assets/img/samanage-header-background.jpg");
+    align-items: center;
     /* Pick a solid background color that will be displayed while the background image is loading */
     background-color: #464646;
+    background-image: url("assets/img/samanage-header-background.jpg");
     background-repeat: no-repeat;
     background-size: contain;
     display: flex;
+    flex-wrap: wrap;
     font-family: 'free_sans', sans-serif;
     height: 52em;
     position: relative;
-    align-items: center;
-    flex-wrap: wrap;
 }
 
 #primary-banner-text {
@@ -199,20 +199,20 @@ FEATURE WRAPPER STYLING
 }
 
 #feature-list-wrapper ul li p {
-    /*Ensure that the order of the text always comes after the image */
-    order: 2;
-    margin: 0;
     /*Vertically centers the text in its li */
     align-self: center;
+    margin: 0;
+    /*Ensure that the order of the text always comes after the image */
+    order: 2;
 }
 
 .feature-img {
-    position: relative;
-    overflow: hidden;
-    width: 25px;
-    height: 25px;
     display: inline-block;
+    height: 25px;
     margin: 0.5em 1.2em 0.5em 0;
+    overflow: hidden;
+    position: relative;
+    width: 25px;
 }
 
 .feature-icon {
@@ -239,8 +239,8 @@ QUOTE WRAPPER STYLING
 }
 
 #quote-wrapper h1 {
-    font-size: 3em;
     font-family: 'free_sans', sans-serif;
+    font-size: 3em;
     margin: 40px 0 15px;
 }
 
@@ -275,18 +275,18 @@ SOCIAL WRAPPER STYLING
     margin: 0 .7em;
 }
 
+.social-icon-link {
+    display: inline-block;
+    height: 54px;
+    margin: 0.3em;
+    overflow: hidden;
+    position: relative;
+    width: 54px;
+}
+
 .social-share-icon {
     position: absolute;
     width: auto;
-}
-
-.social-icon-link {
-    position: relative;
-    overflow: hidden;
-    width: 54px;
-    height: 54px;
-    display: inline-block;
-    margin: 0.5em;
 }
 
 
