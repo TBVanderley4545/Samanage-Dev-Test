@@ -292,6 +292,27 @@ SOCIAL WRAPPER STYLING
     margin: 0.5em;
 }
 
+/*The below icon ids were created to make it easier to identify what was being displayed and for easier swapping if the need arises.*/
+#twitter-icon {
+    left: -56px
+}
+
+#google-plus-icon {
+    left: -112px
+}
+
+#linkedin-icon {
+    left: -168px
+}
+
+#blog-icon {
+    left: -224px
+}
+
+#email-icon {
+    left: -280px
+}
+
 
 /******************************************
 FOOTER STYLING
