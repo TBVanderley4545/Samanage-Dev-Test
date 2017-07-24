@@ -43,7 +43,9 @@ ul {
 
 .custom-button {
     /*    Remove button border for cleaner look*/
+    background-color: transparent;
     border: none;
+    cursor: pointer;
     font-family: 'free_sans', sans-serif;
     font-size: 1.3em;
     font-weight: 900;
@@ -129,14 +131,22 @@ PRIMARY BANNER STYLING
 
 #trial-button {
     background-color: #00943F;
-    color: #fff;
+    display: inline-block;
     margin-right: .5%;
+}
+
+#trial-button button {
+    color: #fff;
 }
 
 #demo-button {
     background-color: #FFCB3E;
-    color: #0069d5;
+    display: inline-block;
     margin-left: .5%;
+}
+
+#demo-button button {
+    color: #0069d5;
 }
 
 #customer-logos-container {
@@ -410,14 +420,12 @@ MEDIA QUERIES
 
 @media screen and (max-width: 768px) {
     /*    Change the header logo and phone number to stack on top of each other. Change text size of primary-banner text, feature headline text and quote text to avoid the text size from exhibiting strange behavior and overall unattractive display. Additionally, modify button size and shift all buttons to take a single line to allow for easier tapping on touch devices.*/
-    
     /******************************************
     GENERAL STYLING
     ******************************************/
     .custom-button {
         font-size: .7em;
     }
-    
     /******************************************
     HEADER STYLING
     ******************************************/
@@ -466,7 +474,6 @@ MEDIA QUERIES
     #feature-wrapper h2 {
         font-size: 1.75em;
     }
-
     /******************************************
     QUOTE WRAPPER STYLING
     ******************************************/
@@ -486,7 +493,6 @@ MEDIA QUERIES
 
 @media screen and (max-width: 653px) {
     /*    Change the feature list from horizontal to vertical when there isn't enough horizontal real estate.*/
-    
     /******************************************
     FEATURE WRAPPER STYLING
     ******************************************/
@@ -495,16 +501,15 @@ MEDIA QUERIES
         flex-direction: column;
     }
 }
+
 @media screen and (max-width: 476px) {
     /*    Center quote text, and ensure that the quote button is appearing in a spot that makes sense relative to the rest of the layout without infringing on other elements.*/
-    
     /******************************************
     QUOTE WRAPPER STYLING
     ******************************************/
     #quote-wrapper {
         text-align: center;
     }
-    
     #quote-button {
         margin-top: 3%;
     }
