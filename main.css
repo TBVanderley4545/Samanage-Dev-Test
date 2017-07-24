@@ -11,20 +11,14 @@
 8. EMBEDDED FONT
     8.1 free_sans
 9. MEDIA QUERIES
-
-
-	2. Header / #header
-	3. Content / #content
-		3.1. Primary Banner / #primary-banner
-		3.2. Right column / #rightcolumn
-		3.3. Sidebar / #sidebar
-			3.3.1. RSS / #rss
-			3.3.2. Search / #search
-			3.3.3. Boxes / .box
-			3.3.4. Sideblog / #sideblog
-			3.3.5. Advertisements / .ads
-	4. Footer / #footer
-
+    9.1 min-width --> 1921px
+    9.2 max-width --> 1596px
+    9.3 max-width --> 1296px
+    9.4 max-width --> 1043px
+    9.5 max-width --> 706px
+    9.6 max-width --> 476px
+    9.7 max-width --> 276px
+    
 ******************************************/
 
 
@@ -168,7 +162,7 @@ FEATURE WRAPPER STYLING
 }
 
 #ipad-image {
-    margin-top:auto;
+    margin-top: auto;
 }
 
 #feature-text-wrapper {
@@ -325,53 +319,64 @@ EMBEDDED FONT
 MEDIA QUERIES
 ******************************************/
 
-@media screen and (max-width: 1596px) {
-    /*    This query is to change how the primary-banner background displays. Additionally, this query will drop the size of the iPad image so that there is more room for the features to display.  */
-    
+@media screen and (min-width: 1921px) {
+    /*    Account for screens greater than 1920px wide to prevent blank space in the banner background-image*/
     /******************************************
     PRIMARY BANNER STYLING
     ******************************************/
-    
     #primary-banner {
         /* This is what makes the background image rescale based on its container's size */
         background-size: cover;
     }
-    
+    #button-container {
+        margin: -12% auto 0 auto;
+    }
+}
+
+@media screen and (max-width: 1596px) {
+    /*    This query is to change how the primary-banner background displays. Additionally, this query will drop the size of the iPad image so that there is more room for the features to display. Adjust social-wrapper ul margin.  */
+    /******************************************
+    PRIMARY BANNER STYLING
+    ******************************************/
+    #primary-banner {
+        /* This is what makes the background image rescale based on its container's size */
+        background-size: cover;
+    }
     /******************************************
     FEATURE WRAPPER STYLING
     ******************************************/
-    
     #ipad-image {
         height: 50%;
         height: 50%;
         width: 50%;
     }
+    /******************************************
+    SOCIAL WRAPPER STYLING
+    ******************************************/
+    #social-wrapper ul {
+        margin: 2em auto;
+    }
 }
 
 @media screen and (max-width: 1296px) {
     /*    This query will remove the iPad image and then shift the feature list to be centered to avoid wasting space.  */
-    
     /******************************************
     FEATURE WRAPPER STYLING
     ******************************************/
-    
     #feature-wrapper {
         display: flex;
         margin: 70px 19vh 0;
     }
-    
     #ipad-image {
         display: none;
     }
-    
     #feature-text-wrapper {
         margin: 0 auto;
     }
-    
-    #feature-wrapper h2, #feature-wrapper p {
+    #feature-wrapper h2,
+    #feature-wrapper p {
         text-align: center;
     }
-    
     #feature-list-wrapper ul {
         margin: 0 auto;
     }
@@ -379,124 +384,98 @@ MEDIA QUERIES
 
 @media screen and (max-width: 1043px) {
     /*    Change text size of primary-banner text to avoid the text size from exhibiting strange behavior and overall unattractive display. Additionally, use this break point to shrink the size of the primary-banner so that it takes up less space because we're likely transitioning to tablets and mobile devices at this point.    */
-    
     /******************************************
     PRIMARY BANNER STYLING
     ******************************************/
-
     #primary-banner {
-        height:35em;
+        height: 35em;
     }
-
     #primary-banner-text h1 {
         font-size: 3em;
     }
-
     #primary-banner-text h3 {
         font-size: 1.4em;
     }
-    
     #button-container {
         margin-top: -200px;
     }
-    
-    
     /******************************************
     FEATURE WRAPPER STYLING
     ******************************************/
-    
     #feature-wrapper {
-    margin: 70px 5vh 0;
+        margin: 70px 5vh 0;
     }
 }
 
 @media screen and (max-width: 706px) {
     /*    Change the header logo and phone number to stack on top of each other. Change text size of primary-banner text, feature headline text and quote text to avoid the text size from exhibiting strange behavior and overall unattractive display. Additionally, modify button size and shift all buttons to take a single line to allow for easier tapping on touch devices.*/
-    
     /******************************************
     HEADER STYLING
     ******************************************/
-
     #header {
         display: flex;
         flex-direction: column;
         height: 3em;
-        min-height: 6%;
-        /*For browsers without vh unit*/
-        min-height: 6vh;
+        min-height: 55px;
     }
-
     #phone-number {
         font-family: 'Open Sans', sans-serif;
         font-size: 1.3em;
         font-weight: 700;
-        margin:0;
+        margin: 0;
     }
-
     #samanage-logo {
         margin-top: 5px;
         object-fit: contain;
     }
-    
     /******************************************
     PRIMARY BANNER STYLING
     ******************************************/
-
     #primary-banner-text h1 {
         font-size: 2em;
         line-height: 1em;
     }
-
     #primary-banner-text h3 {
         font-size: 1em;
     }
-    
     #button-container {
         align-items: center;
         display: flex;
         flex-direction: column;
     }
-    
     #trial-button {
         margin: 0 0 1.25% 0;
         width: 95%;
     }
-    
     #demo-button {
         margin: 1.25% 0 0 0;
         width: 95%;
     }
-    
     /******************************************
     FEATURE WRAPPER STYLING
     ******************************************/
-
     #feature-wrapper h2 {
         font-size: 1.75em;
     }
-    
     /******************************************
     QUOTE WRAPPER STYLING
     ******************************************/
-    
     #quote-wrapper {
         height: 15em;
     }
-    
     #quote-wrapper h1 {
         font-size: 2em;
     }
-    
     #quote-wrapper p {
         font-size: 1em;
     }
-    
     #quote-button {
         height: 2em;
     }
 }
 
-@media screen and (max-width: 706px) {
+@media screen and (max-width: 476px) {
+    /*    Ensure that the quote button is appearing in a spot that makes sense relative to the rest of the layout without infringing on other elements.*/
     /******************************************
     QUOTE WRAPPER STYLING
     ******************************************/
@@ -505,3 +484,13 @@ MEDIA QUERIES
     }
 }
 
+@media screen and (max-width: 276px) {
+    /*    Cleanup one final fringe case that causes the quote-button to fall out of the div. Quick clearfix*/
+    /******************************************
+    QUOTE WRAPPER STYLING
+    ******************************************/
+    #quote-wrapper {
+        clear: both;
+        display: block;
+    }
+}
