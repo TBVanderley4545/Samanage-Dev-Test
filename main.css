@@ -14,7 +14,7 @@
     9.1 min-width --> 1921px
     9.2 max-width --> 1596px
     9.3 max-width --> 1296px
-    9.4 max-width --> 1100px
+    9.4 max-width --> 1046px
     9.5 max-width --> 768px
     9.6 max-width --> 653px
     9.7 max-width --> 476px
@@ -383,7 +383,7 @@ MEDIA QUERIES
     }
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1046px) {
     /*    Change text size of primary-banner text to avoid the text size from exhibiting strange behavior and overall unattractive display. Additionally, use this break point to shrink the size of the primary-banner so that it takes up less space because we're likely transitioning to tablets and mobile devices at this point.    */
     /******************************************
     PRIMARY BANNER STYLING
