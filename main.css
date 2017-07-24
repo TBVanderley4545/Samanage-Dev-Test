@@ -232,7 +232,7 @@ QUOTE WRAPPER STYLING
     display: flex;
     flex-direction: column;
     /* Remove left and right margin from the primary banner*/
-    min-height: 20em;
+    height: 20em;
     position: relative;
 }
 
@@ -414,11 +414,37 @@ MEDIA QUERIES
     /*    Change the header logo and phone number to stack on top of each other. Change text size of primary-banner text, feature headline text and quote text to avoid the text size from exhibiting strange behavior and overall unattractive display. Additionally, modify button size and shift all buttons to take a single line to allow for easier tapping on touch devices.*/
     
     /******************************************
+    HEADER STYLING
+    ******************************************/
+
+    #header {
+        display: flex;
+        flex-direction: column;
+        height: 3em;
+        min-height: 6%;
+        /*For browsers without vh unit*/
+        min-height: 6vh;
+    }
+
+    #phone-number {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1.3em;
+        font-weight: 700;
+        margin:0;
+    }
+
+    #samanage-logo {
+        margin-top: 5px;
+        object-fit: contain;
+    }
+    
+    /******************************************
     PRIMARY BANNER STYLING
     ******************************************/
 
     #primary-banner-text h1 {
         font-size: 2em;
+        line-height: 1em;
     }
 
     #primary-banner-text h3 {
@@ -426,15 +452,18 @@ MEDIA QUERIES
     }
     
     #button-container {
+        align-items: center;
         display: flex;
         flex-direction: column;
     }
     
     #trial-button {
+        margin: 0 0 1.25% 0;
         width: 95%;
     }
     
     #demo-button {
+        margin: 1.25% 0 0 0;
         width: 95%;
     }
     
@@ -450,6 +479,10 @@ MEDIA QUERIES
     QUOTE WRAPPER STYLING
     ******************************************/
     
+    #quote-wrapper {
+        height: 15em;
+    }
+    
     #quote-wrapper h1 {
         font-size: 2em;
     }
@@ -458,5 +491,17 @@ MEDIA QUERIES
         font-size: 1em;
     }
     
+    #quote-button {
+        height: 2em;
+    }
+}
+
+@media screen and (max-width: 706px) {
+    /******************************************
+    QUOTE WRAPPER STYLING
+    ******************************************/
+    #quote-button {
+        margin-top: 3%;
+    }
 }
 
