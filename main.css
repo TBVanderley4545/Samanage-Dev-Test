@@ -231,8 +231,9 @@ QUOTE WRAPPER STYLING
 
 #quote-wrapper h1 {
     font-size: 3em;
-    margin: 50px 0 15px;
-/*    margin-bottom: 0;*/
+    font-family: 'free_sans', sans-serif;
+    margin: 40px 0 15px;
+    /*    margin-bottom: 0;*/
 }
 
 #quote-wrapper p {
@@ -244,7 +245,7 @@ QUOTE WRAPPER STYLING
     background-color: #FFCB3E;
     color: #000;
     height: 3em;
-    margin-top: 2.5em;
+    margin-top: 2.3em;
 }
 
 
