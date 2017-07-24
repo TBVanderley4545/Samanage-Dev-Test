@@ -15,7 +15,7 @@
     9.2 max-width --> 1596px
     9.3 max-width --> 1296px
     9.4 max-width --> 1043px
-    9.5 max-width --> 706px
+    9.5 max-width --> 980px
     9.6 max-width --> 476px
     9.7 max-width --> 276px
     
@@ -407,7 +407,7 @@ MEDIA QUERIES
     }
 }
 
-@media screen and (max-width: 706px) {
+@media screen and (max-width: 768px) {
     /*    Change the header logo and phone number to stack on top of each other. Change text size of primary-banner text, feature headline text and quote text to avoid the text size from exhibiting strange behavior and overall unattractive display. Additionally, modify button size and shift all buttons to take a single line to allow for easier tapping on touch devices.*/
     /******************************************
     HEADER STYLING
@@ -457,6 +457,7 @@ MEDIA QUERIES
     #feature-wrapper h2 {
         font-size: 1.75em;
     }
+
     /******************************************
     QUOTE WRAPPER STYLING
     ******************************************/
@@ -474,11 +475,27 @@ MEDIA QUERIES
     }
 }
 
+@media screen and (max-width: 653px) {
+    /*    Change the feature list from horizontal to vertical when there isn't enough horizontal real estate.*/
+    
+    /******************************************
+    FEATURE WRAPPER STYLING
+    ******************************************/
+    #feature-list-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+}
 @media screen and (max-width: 476px) {
-    /*    Ensure that the quote button is appearing in a spot that makes sense relative to the rest of the layout without infringing on other elements.*/
+    /*    Center quote text, and ensure that the quote button is appearing in a spot that makes sense relative to the rest of the layout without infringing on other elements.*/
+    
     /******************************************
     QUOTE WRAPPER STYLING
     ******************************************/
+    #quote-wrapper {
+        text-align: center;
+    }
+    
     #quote-button {
         margin-top: 3%;
     }
