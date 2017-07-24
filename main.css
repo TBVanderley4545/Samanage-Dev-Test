@@ -65,8 +65,8 @@ HEADER STYLING
     display: flex;
     height: 3em;
     justify-content: space-between;
-    min-height: 5%;
     /*For browsers without vh unit*/
+    min-height: 5%;
     min-height: 5vh;
     padding: 0 11%;
 }
@@ -91,9 +91,7 @@ PRIMARY BANNER STYLING
     background-image: url("assets/img/samanage-header-background.jpg");
     /* Pick a solid background color that will be displayed while the background image is loading */
     background-color: #464646;
-    /* Image doesn't repeat */
     background-repeat: no-repeat;
-    /* This is what makes the background image rescale based on its container's size */
     background-size: contain;
     display: flex;
     font-family: 'free_sans', sans-serif;
@@ -124,7 +122,7 @@ PRIMARY BANNER STYLING
 
 #button-container {
     margin: -300px auto 0 auto;
-    /*    Using text-align: center so that the buttons inside the container are centered*/
+    /*Using text-align: center so that the buttons inside the container are centered*/
     text-align: center;
     width: 100%;
 }
@@ -201,10 +199,10 @@ FEATURE WRAPPER STYLING
 }
 
 #feature-list-wrapper ul li p {
-    /*    Ensure that the order of the text always comes after the image */
+    /*Ensure that the order of the text always comes after the image */
     order: 2;
     margin: 0;
-    /*    Vertically centers the text in its li */
+    /*Vertically centers the text in its li */
     align-self: center;
 }
 
@@ -236,7 +234,6 @@ QUOTE WRAPPER STYLING
     color: #fff;
     display: flex;
     flex-direction: column;
-    /* Remove left and right margin from the primary banner*/
     height: 20em;
     position: relative;
 }
@@ -292,7 +289,9 @@ SOCIAL WRAPPER STYLING
     margin: 0.5em;
 }
 
+
 /*The below icon ids were created to make it easier to identify what was being displayed and for easier swapping if the need arises.*/
+
 #twitter-icon {
     left: -56px
 }
@@ -338,9 +337,6 @@ FOOTER STYLING
 EMBEDDED FONT
 ******************************************/
 
-
-/*This font is used for the buttons in the primary-banner*/
-
 @font-face {
     font-family: free_sans;
     src: url("assets/font/FreeSans.ttf");
@@ -357,7 +353,6 @@ MEDIA QUERIES
     PRIMARY BANNER STYLING
     ******************************************/
     #primary-banner {
-        /* This is what makes the background image rescale based on its container's size */
         background-size: cover;
     }
     #button-container {
@@ -371,7 +366,6 @@ MEDIA QUERIES
     PRIMARY BANNER STYLING
     ******************************************/
     #primary-banner {
-        /* This is what makes the background image rescale based on its container's size */
         background-size: cover;
     }
     /******************************************
