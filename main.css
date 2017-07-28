@@ -528,6 +528,13 @@ MEDIA QUERIES
     #quote-button {
         margin-top: 3%;
     }
+    
+    /******************************************
+    FEATURE WRAPPER STYLING
+    ******************************************/
+    #feature-wrapper {
+        margin: 70px 1vh 0;
+    }
 }
 
 @media screen and (max-width: 276px) {
@@ -539,4 +546,5 @@ MEDIA QUERIES
         clear: both;
         display: block;
     }
+
 }
